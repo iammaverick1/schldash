@@ -11,11 +11,6 @@ import {
   Newspaper,
   User,
 } from "lucide-react";
-import StatisticsPage from "./Roles/page";
-import CalendarPage from "./AuditLogs/page";
-import RolesPage from "./Roles/page";
-import AuditLogsPage from "./AuditLogs/page";
-import { link } from "fs";
 
 export default function Home() {
   return (

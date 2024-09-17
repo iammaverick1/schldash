@@ -13,11 +13,11 @@ import {
 import ThemeToggler from "@/components/ThemeToggler";
 const Navbar = () => {
   return (
-    <div className="bg-primary dark:bg-slate-700  text-white py-2 px-5 flex justify-between">
+    <div className="bg-primary dark:bg-slate-700 text-white py-2 px-5 flex justify-between">
+      {" "}
       <Link href="/">
         <Image src={logo} alt="travern" width={40}></Image>
       </Link>
-
       <div className="flex items-center">
         <ThemeToggler />
         <DropdownMenu>
@@ -32,9 +32,11 @@ const Navbar = () => {
             <DropdownMenuLabel>My Account</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
-              <Link href="/profile"> Profile</Link>
+              <Link href="/Profile"> Profile</Link>
             </DropdownMenuItem>
-            <DropdownMenuItem>Team</DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/Settings"></Link>Settings
+            </DropdownMenuItem>
             <DropdownMenuItem>
               <Link href="/auth">Logout</Link>
             </DropdownMenuItem>

@@ -1,5 +1,8 @@
 import AuditLogsPage from "@/app/(main)/AuditLogs/page";
 import RolesPage from "@/app/(main)/Roles/page";
+import BillingPage from "@/app/(main)/Billing/page";
+import NotificationPage from "@/app/(main)/Notification/page";
+import ProfilePage from "@/app/(main)/Profile/page";
 import {
   Command,
   CommandDialog,
@@ -60,17 +63,26 @@ const Sidebar = () => {
         <CommandGroup heading="Settings">
           <CommandItem>
             <User className="mr-2 h-4 w-4" />
-            <span>Profile</span>
+            <Link href="/Profile">
+              {" "}
+              <ProfilePage />
+            </Link>
             <CommandShortcut>⌘P</CommandShortcut>
           </CommandItem>
           <CommandItem>
             <CreditCard className="mr-2 h-4 w-4" />
-            <span>Billing</span>
+            <Link href="/Billing">
+              {" "}
+              <BillingPage />
+            </Link>
             <CommandShortcut>⌘B</CommandShortcut>
           </CommandItem>
           <CommandItem>
             <BellRing className="mr-2 h-4 w-4" />
-            <span>Notification</span>
+            <Link href="/Notification">
+              {" "}
+              <NotificationPage />
+            </Link>
             <CommandShortcut>⌘N</CommandShortcut>
           </CommandItem>
         </CommandGroup>
